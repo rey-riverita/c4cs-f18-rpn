@@ -18,5 +18,9 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate("10 2 /")
 		self.assertEqual(5, result)
 
+	def test_exp(self):
+		result = rpn.calculate("5 2 ^")
+		self.assertEqual(25, result)
+
 
 # TODO: add a test for subtract
